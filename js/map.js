@@ -82,9 +82,10 @@ document.querySelector('a-scene').addEventListener('render-target-loaded', () =>
             wall.setAttribute('static-body', '');
           }
 
-          else { // normal walls
+          // normal walls
+          else {
             wall.setAttribute('color', '#fff');
-            wall.setAttribute('material', 'src: #wall; repeat: 4 4');
+            wall.setAttribute('material', 'src: #wall; repeat: 20 20; roughness: 1;');
             wall.setAttribute('static-body', '');
           }
         }
