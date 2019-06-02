@@ -25,5 +25,8 @@
     "aframe-scene",
     "webvr",
     "vr"
-  ]
+  ],
+  "dependencies": {
+    "aframe-asset-lazy-load": "^1.0.0"
+  }
 }

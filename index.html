@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <link rel="stylesheet" href="main.css">
-  <title>VR: So simple even the Marketing team can use it.</title>
+  <title>Museum</title>
   <meta name="description" content="Now in 3D!">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.6.0/aframe-master.min.js"></script>
@@ -15,6 +15,22 @@
 <body>
 
   <a-scene fog="type: linear; color: #000; far: 16; near: 7">
+
+      <!-- Asset management system. -->
+      <a-assets>
+          <audio src="audio/84529__cmusounddesign__02-museum.ogg" id="bar"></audio>
+          <audio src="audio/219462__cediez__musee-victoria-londres-grand-escalier.ogg" id="foo"></audio>
+      </a-assets>
+
+      <!-- Audio -->
+        <a-sound src="#foo"
+        autoplay="true"
+        loop="true"
+        position="1 1 0"></a-sound>
+        <a-sound src="#bar"
+        autoplay="true"
+        loop="true"
+        position="1 1 0"></a-sound>
 
     <!-- Load Assets -->
     <a-assets>
